@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.vin-salespop{
+  position : fixed ;
+  bottom : -200px;
+  border: 1px solid #eee ;
+  padding : 0.3rem  1rem ;
+  border-radius : 10px ;
+  box-shadow: 5px 4px 10px #b7b7b7;
+  font-family: 'Noto Sans', sans-serif;
+  transition: all 500ms ;
+}
+.vin-salespop.active{
+  bottom: 20px ;
+}
+
+.vin-salespop.slide-left{
+  left: -9999px ;
+  bottom: 20px ;
+  transition: all 500ms ;
+}
+.vin-salespop.slide-left.active{
+  left: 20px ;
+}
+
+.vin-salespop .vsp-line{
+  display : flex ;
+  justify-content : space-between ;
+  align-items : center ;
+  padding : 0.4rem 0px;
+}
+
+
+.vin-salespop .vsp-title{
+  display : block ;
+  color : #666 ;
+  font-size: 0.9rem;
+}
+
+.vin-salespop .vsp-img{
+  width : 20% ;
+  border-radius : 20px ;
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+.vin-salespop .vsp-data{
+  display : flex ;
+  flex-direction : column ;
+  justify-content : space-between ;
+  align-items : space-betwenn ;
+  min-height : 65px ;
+  padding-right: 10px ;
+}
+.vin-salespop.no-img .vsp-data{
+  min-height: 50px  ;
+}
+.vin-salespop.no-img .vsp-img{
+  display: none;
+}
+
+.vin-salespop .vsp-meta{
+  font-size : 0.85rem ;
+}
+.vin-salespop .vsp-subtitle{
+  color : #333 ;
+}
+.vin-salespop .vsp-subtitle.blink{
+  color : #999 ;
+  animation:blinkingText 1.2s infinite;
+}
+.vin-salespop .vsp-time{
+  font-style : italic ;
+  font-weight : 450;
+}
+
+.vsp-location{
+  font-size : 0.7rem ;
+  margin-top: 10px ;
+}
+.vin-salespop i{
+  font-style: normal !important ;
+}
+
+@keyframes blinkingText{
+    0%{     color: #bbb;    }
+    49%{    color: #bbb; }
+    60%{    color: #333; }
+    99%{    color: #333;  }
+    100%{   color: #bbb;    }
+}
