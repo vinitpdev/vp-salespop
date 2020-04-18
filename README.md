@@ -46,3 +46,16 @@ next comes the js file with our config variable
 </script>
 <script src='vp-salespop.js'></script>
 ```
+
+
+## CDN LINKS
+
+CSS
+```
+<link rel='stylesheet' href='https://cdn.statically.io/gh/vinitapps/vp-salespop/618a2893/vp-salespop.min.css' />
+```
+
+Javascript
+```
+<script src='https://cdn.statically.io/gh/vinitapps/vp-salespop/618a2893/vp-salespop.min.js'></script>
+```
